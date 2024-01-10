@@ -1,0 +1,83 @@
+
+Q1. Explain the role of operators in JavaScript. Why are they essential in programming?
+Operators in JavaScript are symbols or keywords that perform operations on variables or values. They allow developers to manipulate data, perform calculations, and make decisions in a program. Operators are essential in programming because they enable the creation of complex algorithms, mathematical computations, and logical evaluations, making it possible to perform a wide range of tasks in a program.
+
+Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for each category.
+JavaScript operators can be categorized based on their functionality into:
+
+Arithmetic Operators:
+
+javascript
+let a = 5;
+let b = 2;
+let sum = a + b;  // Addition
+let difference = a - b;  // Subtraction
+let product = a * b;  // Multiplication
+let quotient = a / b;  // Division
+Comparison Operators:
+
+javascript
+let x = 10;
+let y = 5;
+let isEqual = x === y;  // Equal to
+let isNotEqual = x !== y;  // Not equal to
+let isGreater = x > y;  // Greater than
+let isLess = x < y;  // Less than
+Logical Operators:
+
+javascript
+let p = true;
+let q = false;
+let andResult = p && q;  // Logical AND
+let orResult = p || q;  // Logical OR
+let notResult = !p;  // Logical NOT
+Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+
+Unary Operators (1 operand):
+
+javascript
+let num = 5;
+let unaryExample = -num;  // Unary minus
+Binary Operators (2 operands):
+
+javascript
+let a = 10;
+let b = 5;
+let binaryExample = a + b;  // Addition is a binary operator
+Ternary Operator (3 operands):
+
+javascript
+let x = 10;
+let y = 5;
+let ternaryExample = (x > y) ? 'x is greater' : 'y is greater';
+Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
+Precedence determines the order in which operators are evaluated in an expression. Operators with higher precedence are evaluated first. Associativity defines the order of evaluation when operators of the same precedence appear in an expression. It can be left-to-right or right-to-left.
+
+Understanding these concepts is crucial to avoid ambiguity in expressions and ensure that the program behaves as expected. For example, multiplication has higher precedence than addition, so 2 + 3 * 4 evaluates to 14, not 20. Knowing the associativity is essential in cases where multiple operators of the same precedence appear in an expression.
+
+Q5. Write a JavaScript program that calculates the simple interest using the formula Simple interest = (principal * rate * time) / 100.
+
+javascript
+let principal = 1000;
+let rate = 5;
+let time = 2;
+
+let simpleInterest = (principal * rate * time) / 100;
+console.log("Simple Interest:", simpleInterest);
+Q6. Write a JavaScript program to calculate the Body Mass Index (BMI) using the formula BMI = weight (kg) / height * height.
+
+javascript
+let weight = 70;
+let height = 1.75;
+
+let bmi = weight / (height * height);
+console.log("BMI:", bmi);
+Q7. Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate arithmetic operators.
+
+javascript
+let radius = 10;
+
+// Area of a circle formula: π * r^2
+let area = Math.PI * Math.pow(radius, 2);
+console.log("Area of the circle:", area);
+Note: Math.PI represents the mathematical constant π, and Math.pow is used to raise a number to a specified power.
